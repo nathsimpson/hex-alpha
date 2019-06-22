@@ -1,0 +1,11 @@
+{
+  "name": "hex-alpha",
+  "author": "Nathan Simpson",
+  "version": "1.0.0",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
