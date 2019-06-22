@@ -6,6 +6,14 @@ A really simple package that enables you to specify an opacity for your HEX colo
 HEX + Alpha = RGBA
 ```
 
+## Installation
+
+```
+npm install hex-alpha
+// or
+yarn add hex-alpha
+```
+
 ## Examples
 
 ```javascript
