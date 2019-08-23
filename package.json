@@ -2,9 +2,9 @@
   "name": "hex-alpha",
   "author": "Nathan Simpson (https://nathansimpson.design)",
   "description": "A really simple package that enables you to specify an opacity for your HEX colours.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "devDependencies": {
-    "jest": "^24.8.0"
+    "jest": "^24.9.0"
   },
   "main": "index.js",
   "keywords": [
