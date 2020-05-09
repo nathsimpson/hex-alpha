@@ -4,7 +4,7 @@
   "description": "A really simple package that enables you to specify an opacity for your HEX colours.",
   "version": "1.0.2",
   "devDependencies": {
-    "jest": "^24.9.0"
+    "jest": "^26.0.1"
   },
   "main": "index.js",
   "keywords": [
