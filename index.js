@@ -1,6 +1,6 @@
 const { hexToRGB, formatRGB, formatRGBA } = require("./utils");
 
-const color = (input, alpha) => {
+const hexAlpha = (input, alpha) => {
   const newColor = hexToRGB(input);
 
   if (alpha) {
@@ -10,4 +10,4 @@ const color = (input, alpha) => {
   }
 };
 
-module.exports = color;
+module.exports = hexAlpha;
