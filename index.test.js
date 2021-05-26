@@ -15,3 +15,7 @@ test("#fa6d01 converts to rgb(250,109,1)", () => {
 test("HEX color and alpha converts to RGBA", () => {
   expect(hexAlpha("#fa6d01", 0.1)).toBe("rgba(250,109,1,0.1)");
 });
+
+test("HEX color with zero alpha converts to RGBA", () => {
+  expect(hexAlpha("#fa6d01", 0)).toBe("rgba(250,109,1,0)");
+});
