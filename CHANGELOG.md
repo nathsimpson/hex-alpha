@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.4
+- [Fix bug where alpha is zero](https://github.com/nathsimpson/hex-alpha/issues/9)
+
 ## 1.0.3
 
 - Add TypeScipt Declaration file
