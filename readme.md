@@ -28,3 +28,6 @@ hexAlpha("#000000", 1);
 hexAlpha("#ffffff");
 // returns "rgb(255,255,255)"
 ```
+
+## Meetup talk
+I gave a talk about making HEX-Alpha at the Sydney Javascript meetup - SydJS. [Check it out here](https://www.youtube.com/watch?v=OQbF8Mx4iso).
