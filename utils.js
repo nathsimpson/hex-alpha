@@ -27,8 +27,9 @@ const hexToRGB = (input) => {
     const x = isShorthand ? channelValue : channelValue.charAt(0); // first character of the color channel string
     const y = isShorthand ? channelValue : channelValue.charAt(1); // second character of the color channel string
 
-    const a = keys[x] * Math.pow(16, 1); // x * 16¹
-    const b = keys[y] * Math.pow(16, 0); // y * 16⁰
+    const a = parseInt(x, 16) * Math.pow(16, 1); // x * 16¹
+    const b = parseInt(y, 16) * Math.pow(16, 0); // y * 16⁰
+
     rgb[e] = a + b;
   });
 
@@ -38,24 +39,5 @@ const hexToRGB = (input) => {
 const formatRGB = ({ R, G, B }) => `rgb(${R},${G},${B})`;
 const formatRGBA = (color, a) =>
   `rgba(${color.R},${color.G},${color.B},${color.A || a})`;
-
-const keys = {
-  0: 0,
-  1: 1,
-  2: 2,
-  3: 3,
-  4: 4,
-  5: 5,
-  6: 6,
-  7: 7,
-  8: 8,
-  9: 9,
-  a: 10,
-  b: 11,
-  c: 12,
-  d: 13,
-  e: 14,
-  f: 15,
-};
 
 module.exports = { hexToRGB, formatRGB, formatRGBA };
