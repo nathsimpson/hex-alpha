@@ -25,8 +25,8 @@ hexAlpha("#fa6d01", 0.1);
 hexAlpha("#000000", 1);
 // returns "rgba(0,0,0,1)"
 
-hexAlpha("#ffffff");
-// returns "rgb(255,255,255)"
+hexAlpha("#f00");
+// returns "rgb(255,0,0)"
 ```
 
 ## Meetup talk

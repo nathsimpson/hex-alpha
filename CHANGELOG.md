@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.1.0
+- [Add support for shorthand hexadecimal syntax](https://github.com/nathsimpson/hex-alpha/issues/11)
+
 ## 1.0.4
 - [Fix bug where alpha is zero](https://github.com/nathsimpson/hex-alpha/issues/9)
 
