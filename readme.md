@@ -20,7 +20,7 @@ yarn add hex-alpha
 import hexAlpha from "hex-alpha";
 
 hexAlpha("#fa6d01", 0.1);
-// returns "rgba(250,109,1, 0.1)"
+// returns "rgba(250,109,1,0.1)"
 
 hexAlpha("#000000", 1);
 // returns "rgba(0,0,0,1)"
@@ -30,4 +30,5 @@ hexAlpha("#ffffff");
 ```
 
 ## Meetup talk
+
 I gave a talk about making HEX-Alpha at the Sydney Javascript meetup - SydJS. [Check it out here](https://www.youtube.com/watch?v=OQbF8Mx4iso).
