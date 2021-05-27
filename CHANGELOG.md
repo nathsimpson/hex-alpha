@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.0
+- [Improve performance](https://github.com/nathsimpson/hex-alpha/pull/14)
+- Add jsdocs
+
 ## 1.2.0
 - [Added type check on alpha argument](https://github.com/nathsimpson/hex-alpha/pull/13/files)
 - Use parseInt to convert hex value to int
