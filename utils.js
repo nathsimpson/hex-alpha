@@ -1,6 +1,6 @@
 /**
  * @param {string} input - A color in hexadecimal syntax. e.g. #fa6d01
- * @returns { r: string, g: string, b: string}
+ * @returns {{ r: string, g: string, b: string }}
  */
 const hexToRGB = input => {
   let hex = input;
