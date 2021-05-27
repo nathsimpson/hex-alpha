@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0
+- [Added type check on alpha argument](https://github.com/nathsimpson/hex-alpha/pull/13/files)
+- Use parseInt to convert hex value to int
+
 ## 1.1.0
 - [Add support for shorthand hexadecimal syntax](https://github.com/nathsimpson/hex-alpha/issues/11)
 
