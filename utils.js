@@ -1,43 +1,22 @@
 /**
  * @param {string} input - A color in hexadecimal syntax. e.g. #fa6d01
- * @returns { R: string, G: string, B: string}
+ * @returns { r: string, g: string, b: string}
  */
-const hexToRGB = (input) => {
-  // normalising string
-  const inputColor = input.replace("#", "").toLowerCase();
+const hexToRGB = input => {
+  let hex = input;
 
-  // Check if color channels are 1 or 2 characters long to
-  // support shorthand hex notation. e.g. #fff or #ffffff.
-  const isShorthand = inputColor.length === 3;
-  const slotWidth = isShorthand ? 1 : 2;
+  if (hex.length === 4) {
+    hex = hex[0] + hex[1] + hex[1] + hex[2] + hex[2] + hex[3] + hex[3];
+  }
 
-  // creating the RGB object
-  let rgb = {
-    R: inputColor.slice(0, slotWidth),
-    G: inputColor.slice(slotWidth, 2 * slotWidth),
-    B: inputColor.slice(2 * slotWidth, 3 * slotWidth),
+  return {
+    r: parseInt(hex.substring(1, 3), 16),
+    g: parseInt(hex.substring(3, 5), 16),
+    b: parseInt(hex.substring(5, 7), 16)
   };
-
-  // applying the algorithm
-  // FF = (15 × 16¹) + (15 × 16⁰) = 255
-  // input = (x × 16¹) + (y × 16⁰) = 255
-  // input = (a) + (b) = 255
-  Object.keys(rgb).forEach((e) => {
-    const channelValue = rgb[e];
-    const x = isShorthand ? channelValue : channelValue.charAt(0); // first character of the color channel string
-    const y = isShorthand ? channelValue : channelValue.charAt(1); // second character of the color channel string
-
-    const a = parseInt(x, 16) * Math.pow(16, 1); // x * 16¹
-    const b = parseInt(y, 16) * Math.pow(16, 0); // y * 16⁰
-
-    rgb[e] = a + b;
-  });
-
-  return rgb;
 };
 
-const formatRGB = ({ R, G, B }) => `rgb(${R},${G},${B})`;
-const formatRGBA = (color, a) =>
-  `rgba(${color.R},${color.G},${color.B},${color.A || a})`;
+const formatRGB = ({ r, g, b }) => `rgb(${r},${g},${b})`;
+const formatRGBA = ({ r, g, b }, a) => `rgba(${r},${g},${b},${a})`;
 
 module.exports = { hexToRGB, formatRGB, formatRGBA };
