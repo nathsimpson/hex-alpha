@@ -10,3 +10,4 @@ Here are the basic steps for releasing:
 6. Push to npm with `npm publish`
 7. `git push`
 8. `git push --tags`
+9. Create a GitHub release from the tag.
