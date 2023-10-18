@@ -1,20 +1,6 @@
 # HEX-ALPHA
 
-A really simple package that enables you to specify an opacity for your HEX colours.
-
-```
-HEX + Alpha = RGBA
-```
-
-## Installation
-
-```
-npm install hex-alpha
-// or
-yarn add hex-alpha
-```
-
-## Examples
+A simple function which allows you to set an opacity value to a HEX color. It returns a string in the format of RGBA.
 
 ```javascript
 import hexAlpha from "hex-alpha";
@@ -27,6 +13,14 @@ hexAlpha("#000000", 1);
 
 hexAlpha("#f00");
 // returns "rgb(255,0,0)"
+```
+
+## Installation
+
+```
+npm install hex-alpha
+// or
+yarn add hex-alpha
 ```
 
 ## Meetup talk
